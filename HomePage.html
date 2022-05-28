@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A-Team Homepage</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+
+      * {
+        box-sizing: border-box;
+      }
+      .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+      }
+
+      /* Create two unequal columns that sits next to each other */
+      /* Sidebar/left column */
+      .side {
+        -ms-flex: 30%; /* IE10 */
+        flex: 30%;
+        background-color: #c7c4c4;
+        padding: 10px;
+      }
+
+      /* Main column */
+      .main {
+        -ms-flex: 70%; /* IE10 */
+        flex: 70%;
+        background-color: white;
+        padding: 10px;
+      }
+      .footer {
+        display: inline;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <marquee behavior="slide" direction="left"1>Welcome Home Family! </marquee>
+
+    <div class="header">
+      <h1>A-Team Expense Reimbursement System</h1>
+      <h3>
+        The personal reimbursment system for all employees at A-Team.
+      </h3>
+    </div>
+
+    <div class="row">
+      <div class="side">
+        <h2>Login Form</h2>
+        <form action="register" method="post">
+        <div>
+          <label for="username"><b>Username</b></label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="user_name"
+            required
+          />
+          <br>
+
+          <label for="password"><b>Password</b></label>
+          <input
+            type="text"
+            placeholder="Enter Password"
+            name="user_pw"
+            required
+          />
+          <br />
+
+          <button type="submit" value="submit">Login</button>
+         <label>
+          <input type="checkbox" checked="checked" />Remember me
+          </label>
+        </div>
+
+        <div>
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw"><a href="#">Help</a></span>
+        </div>
+      </div>
+      </form>
+
+      <div class="main">
+        <p>
+          In the course of your duties as an employee of A-Team, you may be
+          required to pay for goods/services that allow you to do your job. Any
+          eligible expenses that you incur on behalf of A-Team will be
+          reimbursed in full.
+        </p>
+
+        <h2>Qualifying Expenses.</h2>
+
+        <p>
+          A-Team will reimburse all part and full-time employees for all
+          qualifying expenses, including:
+        </p>
+
+        <ul type="square">
+          <li>Travel for business purposes.</li>
+          <li>Conference fees.</li>
+          <li>Accommodations while attending meetings, conferences, etc.</li>
+          <li>Office supplies.</li>
+          <li>Software required for work.</li>
+          <li>Professional certification/membership fees.</li>
+        </ul>
+
+        <p>
+          This list is by no means exhaustive. Employees should always get
+          approval for reimbursement from their supervisors before incurring a
+          work expense.
+        </p>
+
+        <h2>Non-Qualifying Expenses.</h2>
+
+        <p>
+          There are certain expenses that A-Team will not be held responsible
+          for, including:
+        </p>
+
+        <ul type="square">
+          <li>Lost personal property.</li>
+          <li>Unauthorized meals/entertainment.</li>
+          <li>Fines incurred while operating a company vehicle.</li>
+          <li>Unauthorized flight upgrades, accommodations, etc.</li>
+          <li>
+            Expenses for spouses who accompany employees on business trips.
+          </li>
+        </ul>
+
+        <h2>Procedure.</h2>
+
+        <ol>
+          <li>Login</li>
+          <li>
+            Update personal information, if necessary, as the speed of repayment
+            is dependent upon the accuracy of your information.
+          </li>
+          <li>Submit a reimbursement request form to manager.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h4>ERS by Jazzlyn G., Lisa L., Joshua A.</h4>
+    </div>
+  </body>
+</html>
